@@ -136,8 +136,8 @@ class PlayingState extends MediaState {
 
 		// Set appropriate large text based on media type
 		if (activityType === ActivityType.Listening) {
-			// Use album name if available, otherwise fallback to "Listening to Music"
-			largeText = media.album || "Listening to Music"
+			// Use title name if available, otherwise fallback to "Listening to Music"
+			largeText = media.title || "Listening to Music"
 		} else {
 			largeText = "Watching Video"
 		}
